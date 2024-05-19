@@ -1,11 +1,10 @@
 <template>
-
     <div class=" fixed top-0 left-0 w-screen h-screen flex justify-center items-center z-50 bg-black-50">
         <div class=" bg-white top-1/2 left-1/2 shadow-md w-1/3 rounded-md">
             <div class=" bg-amber-500 p-8 rounded-md ">
                 <div class="m text-white mb-4 font-bold flex flex-row justify-between items-center">
                     <h1 class="font-bold text-2xl">Casanova</h1>
-                    <i class="fa-regular fa-circle-xmark text-3xl" @click="$emit('closeModal')"></i>
+                    <i class="fa-regular fa-circle-xmark text-3xl cursor-pointer" @click="$emit('closeModal')"></i>
                 </div>
                 <div class="mb-4">
                     <p class="text-emerald-800 ">Contactez-nous</p>
@@ -61,9 +60,3 @@
         </div>
     </div>
 </template>
-
-<script setup lang="ts">
-</script>
-
-<style>
-</style>
