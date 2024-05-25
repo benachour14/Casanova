@@ -13,7 +13,7 @@ const closeModal = () => {
 
 <template>
 
-        <div class="relative">
+        <div>
             <img src="../assets/backgroundImage.jpg" class="bg-cover absolute top-0 left-0" />
 
             <div class="absolute w-4/12 left-44 top-56">
@@ -27,11 +27,13 @@ const closeModal = () => {
             
         </div>
 
-        
-
         <Informations v-if="displayInfos" @click="closeModal" />
 </template>
 
 
-<style>
+<style scoped>
+.bg-cover {
+  position: relative;
+  z-index: 0;
+}
 </style>
