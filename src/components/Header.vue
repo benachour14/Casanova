@@ -24,7 +24,10 @@ const closeModal = () => {
 
             <Button class="mt-4" @click="displayInfos = !displayInfos">Plus d'informations</Button>
             </div>
+            
         </div>
+
+        
 
         <Informations v-if="displayInfos" @click="closeModal" />
 </template>
